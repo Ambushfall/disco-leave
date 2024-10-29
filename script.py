@@ -23,7 +23,7 @@ async def on_connect():
                 print(e)
 
 
-str = """window.webpackChunkdiscord_app.push([
+devtoolsScript = """window.webpackChunkdiscord_app.push([
   [Math.random()],
   {},
   req => {
@@ -41,7 +41,7 @@ str = """window.webpackChunkdiscord_app.push([
   },
 ]);""" # Javascript to be pasted into the dev console of discord to force it to give us the user token
 
-pyperclip.copy(str) # Copy the string to the clipboard
+pyperclip.copy(devtoolsScript) # Copy the string to the clipboard
 print("Open discord devtools, and paste the code there, press enter, afterwards come back here and paste, then press enter.")
 
 token = input("User Token: ")
