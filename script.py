@@ -77,7 +77,6 @@ async def on_connect():
     global cbool
     print(f"Connected {client.user.name}") # So the user knows the script is working properly.
     while cbool:
-        print()
         results = menuSwitch(smrdimMeni())
         for channel in results:
             try:
