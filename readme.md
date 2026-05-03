@@ -3,7 +3,7 @@
 
 
 ## Requirements
-- Python
+- Python 3.12
 - pip
 - Vencord or other Devtools enabled discord (Web)
 
